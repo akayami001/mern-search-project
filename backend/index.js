@@ -1,16 +1,39 @@
 require("dotenv").config();
 const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
 
+const userRoutes = require("./routes/users.js");
+const cityRoutes = require("./routes/cities.js");
 
 //express app
 const app = express();
 
-const port = process.env.PORT;
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
-app.get('/', (req, res) => {
-  res.send('Hello World');
+app.use(express.json());
+app.use((req, res, next) => {
+  console.log(req.path, req.method);
+  next();
 });
 
-app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
-});
+//routes
+app.use("/api/users", userRoutes);
+app.use("/api/cities", cityRoutes);
+
+//connect to db
+mongoose
+  .connect(process.env.MONGO_DB_URI)
+  .then(() => {
+    //listen for requests
+    app.listen(process.env.PORT, () => {
+      console.log(`connected to db & listening on port`, process.env.PORT);
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
