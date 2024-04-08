@@ -1,0 +1,199 @@
+//cities data
+[
+    {
+        "_id": "661119c6cc610a722486b630",
+        "cityName": "Berlin",
+        "count": 525,
+        "uuid": "8c5f4e1b-7401-4584-a597-8287f63a8689",
+        "__v": 0
+    },
+    {
+        "_id": "6611372aad26aba0168252a3",
+        "cityName": "Paris",
+        "count": 80,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "66113746ad26aba0168252a5",
+        "cityName": "London",
+        "count": 120,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "66113761ad26aba0168252a7",
+        "cityName": "New York",
+        "count": 95,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "66113771ad26aba0168252ab",
+        "cityName": "Tokyo",
+        "count": 110,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "6611377ead26aba0168252ad",
+        "cityName": "Los Angeles",
+        "count": 85,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "66113788ad26aba0168252af",
+        "cityName": "Moscow",
+        "count": 105,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "661137a9ad26aba0168252b1",
+        "cityName": "Beijing",
+        "count": 75,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "661137b4ad26aba0168252b3",
+        "cityName": "Sydney",
+        "count": 90,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "6611386fad26aba0168252bc",
+        "cityName": "Mumbai",
+        "count": 80,
+        "uuid": "79dee11b-df5d-4915-b42d-ee1b5671e97a",
+        "__v": 0
+    },
+    {
+        "_id": "6611492ef6e93b3d436789cd",
+        "cityName": "ankara",
+        "count": 75,
+        "uuid": "8a656027-a2ac-48a2-81ce-497d712a641d",
+        "__v": 0
+    },
+    {
+        "_id": "6611afeab7954e0f18d131f2",
+        "cityName": "Missisiphi",
+        "count": 300,
+        "uuid": "67860b21-e9e9-413b-947d-602e76a9634a",
+        "__v": 0
+    },
+    {
+        "_id": "6611c219b7954e0f18d131ff",
+        "cityName": "Leipzig",
+        "count": 124,
+        "uuid": "67860b21-e9e9-413b-947d-602e76a9634a",
+        "__v": 0
+    },
+    {
+        "_id": "6611e3e9a06792aaf717e9d9",
+        "cityName": "Wuppertal",
+        "count": 35,
+        "uuid": "eb247403-f1c3-4723-b6b5-31261e0c7c32",
+        "__v": 0
+    },
+    {
+        "_id": "6611e3f6a06792aaf717e9db",
+        "cityName": "Bielefeld",
+        "count": 230,
+        "uuid": "eb247403-f1c3-4723-b6b5-31261e0c7c32",
+        "__v": 0
+    },
+    {
+        "_id": "6611e463a06792aaf717e9e0",
+        "cityName": "Bremen",
+        "count": 70,
+        "uuid": "eb247403-f1c3-4723-b6b5-31261e0c7c32",
+        "__v": 0
+    },
+    {
+        "_id": "6611fc84048ee967f20d36c9",
+        "cityName": "Hannover",
+        "count": 178,
+        "uuid": "24c045fb-e07c-4d12-b482-5cbfe43fddfb",
+        "__v": 0
+    },
+    {
+        "_id": "6611fe15048ee967f20d36d1",
+        "cityName": "Kiel",
+        "count": 281,
+        "uuid": "24c045fb-e07c-4d12-b482-5cbfe43fddfb",
+        "__v": 0
+    },
+    {
+        "_id": "6612ac0aac811db8f91a2e63",
+        "cityName": "Istanbul",
+        "count": 245,
+        "uuid": "d84e4256-99ae-4fda-8991-f5e07983e16c",
+        "__v": 0
+    },
+    {
+        "_id": "66139f5abfc1ccc296adf876",
+        "cityName": "Kyiv",
+        "count": 112,
+        "uuid": "2716615a-745e-43a0-99dd-27772055b171",
+        "__v": 0
+    },
+    {
+        "_id": "6613b4e8e2abab6ce3683712",
+        "cityName": "Cologne",
+        "count": 220,
+        "uuid": "406cb822-620c-4644-ba2e-365a8c8c1df4",
+        "__v": 0
+    },
+    {
+        "_id": "6613bd08e2abab6ce3683773",
+        "cityName": "   ",
+        "count": 1,
+        "uuid": "406cb822-620c-4644-ba2e-365a8c8c1df4",
+        "__v": 0
+    },
+    {
+        "_id": "6613da30a09a2d1cb33716ad",
+        "cityName": "Mancester",
+        "count": 123,
+        "uuid": "e27d8f5d-b576-4406-992c-93cd5f087c4d",
+        "__v": 0
+    }
+]
+//users data
+[
+    {
+        "_id": {
+          "$oid": "6613d9c2a09a2d1cb3371693"
+        },
+        "name": "user",
+        "email": "user@yopmail.com",
+        "password": "$2b$10$OK.EzBHSC2iqk.lYGP0O.udV1xilRVo0auaFbXgKmofzAVgG2qgGO",
+        "role": "user",
+        "createdAt": {
+          "$date": "2024-04-08T11:49:22.930Z"
+        },
+        "updatedAt": {
+          "$date": "2024-04-08T11:49:22.930Z"
+        },
+        "__v": 0
+      },
+      {
+        "_id": {
+          "$oid": "66139e7dbfc1ccc296adf871"
+        },
+        "name": "admin",
+        "email": "admin@yopmail.com",
+        "password": "$2b$10$aVKZ6XIoYIh9bSwcPT/1oORkTEnl3nfqIZA3TrmQo21eMEbRD/M0m",
+        "role": "admin",
+        "createdAt": {
+          "$date": "2024-04-08T07:36:29.143Z"
+        },
+        "updatedAt": {
+          "$date": "2024-04-08T07:36:29.143Z"
+        },
+        "__v": 0
+      }
+]
