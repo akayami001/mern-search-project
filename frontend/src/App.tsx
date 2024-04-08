@@ -17,8 +17,8 @@ const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const EditCity = React.lazy(() => import("./components/EditCity"));
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const role = localStorage.getItem("role");
+  const [isLoggedIn, setIsLoggedIn] = useState(role ? true : false);
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
