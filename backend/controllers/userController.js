@@ -2,18 +2,16 @@ const User = require("../models/userModel.js");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-
 // @desc    Register a new user
 // @route   POST /api/users/register
 // @access  Public
- const signUp = async (req, res, next) => {
-  console.log('first')
+const signUp = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
     const userExists = await User.findOne({ email });
     if (userExists) {
       res.status(400);
-      throw new Error('User already exists');
+      throw new Error("User already exists");
     }
     const salt = bcrypt.genSaltSync(10);
     const hashedPassword = bcrypt.hashSync(password, salt);
@@ -21,7 +19,6 @@ const jwt = require("jsonwebtoken");
       name,
       email,
       password: hashedPassword,
- 
     });
 
     await newUser.save();
@@ -50,14 +47,18 @@ const login = async (req, res) => {
     const validPassword = await bcrypt.compare(password, user.password);
     if (!validPassword) throw new Error("Invalid password");
     // Generate JWT
-    const token = jwt.sign({ userId: user._id, role: user.role }, process.env.JWT_SECRET, {
-      expiresIn: "3d",
-    });
-    res.cookie('jwt', '', {
+    const token = jwt.sign(
+      { userId: user._id, role: user.role },
+      process.env.JWT_SECRET,
+      {
+        expiresIn: "3d",
+      }
+    );
+    res.cookie("jwt", "", {
       httpOnly: true,
       maxAge: 3 * 24 * 60 * 60 * 1000,
     });
-    res.json({ token ,role:user.role});
+    res.json({ token, role: user.role });
   } catch (error) {
     console.error("Login error:", error);
     res.status(401).json({ error: "Invalid credentials" });
@@ -68,8 +69,8 @@ const login = async (req, res) => {
 // @route   POST /api/users/logout
 // @access  Public
 const logout = (req, res) => {
-  res.clearCookie('jwt');
-  res.status(200).json({ message: 'Logged out successfully' });
+  res.clearCookie("jwt");
+  res.status(200).json({ message: "Logged out successfully" });
 };
 
-module.exports = {signUp, login, logout  };
+module.exports = { signUp, login, logout };
